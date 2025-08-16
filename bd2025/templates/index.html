@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-center">Jardinons ensemble</h1>
+
+        <nav class="text-center">
+            <ul class="list-[square] list-inside space-y-1">
+                <li><a href="inscription.html">Inscription d’un membre</a></li>
+                <li><a href="affectation.html">Affectation d’une parcelle</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <iframe src="inscription.html"></iframe>
+        </section>
+
+        <aside>
+            <img src="{% static 'images/jardin.jpg' %}" alt="image" class="hover:invert">
+        </aside>
+    </main>
+
+    <footer>
+        <ul>
+            <li>Email: omarbelfeki1@gmail.com</li>
+            <li>Téléphone : +216 53354979</li>
+        </ul>
+    </footer>
+
+</body>
+</html>

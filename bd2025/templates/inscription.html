@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <fieldset style="background-color: #FFFFD8; ">
+        <legend>Inscription</legend>
+        <form method="post">
+            {% csrf_token %}
+            <table style="text-align: left;color: #009933; margin-vertical: 4px">
+                <tr>
+                    <th>Nom</th>
+                    <td><input type="text" name="name"></td>
+                </tr>
+
+                <tr>
+                    <th>Address Email</th>
+                    <td><input type="email" name="email"></td>
+                </tr>
+
+                <tr>
+                    <th>Date de naissance</th>
+                    <td><input type="date" name="datenis"></td>
+                </tr>
+
+
+                <tr>
+                    <th>Genre</th>
+                    <td>
+                        <input type="radio" value="M" name="genre"> <b>Masculin</b>
+                        <input type="radio" value="F" name="genre"> <b>Feminin</b>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>Mot de pass</th>
+                    <td><input type="password" name="password"></td>
+                </tr>
+
+                <tr>
+                    <th>Retaper le mot de pass</th>
+                    <td><input type="password" name="verify"></td>
+                </tr>
+            </table>
+            <div >
+                <button type="reset">Annuler</button>
+                <button type="submit">Enregistrer</button>
+            </div>
+        </form>
+
+    </fieldset>
+</body>
+</html>

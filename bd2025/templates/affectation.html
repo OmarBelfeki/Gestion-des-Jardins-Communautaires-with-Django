@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form method="post">
+        {% csrf_token %}
+        idMem <input type="text" name="idmem"><br>
+        idPar <input type="text" name="idpar"><br>
+        date Dep <input type="date" name="date" >
+        <div >
+            <button type="reset">Annuler</button>
+            <button type="submit">affection</button>
+        </div>
+    </form>
+</body>
+</html>
